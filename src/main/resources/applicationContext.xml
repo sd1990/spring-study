@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--
+       <bean id="person" class="org.songdan.spring.study.bean.lifecycle.Person" init-method="initMethod" destroy-method="destroyMethod">
+              <property name="name" value="songdan"/>
+       </bean>
+-->
+       <bean id="customBeanFactoryPostProcessor" class="org.songdan.spring.study.bean.lifecycle.CustomBeanFactoryPostProcessor"/>
+
+       <bean id="customBeanPostProcessor" class="org.songdan.spring.study.bean.lifecycle.CustomBeanPostProcessor"/>
+
+       <bean id="complexPerson" class="org.songdan.spring.study.bean.lifecycle.ComplexPerson" init-method="initMethod" destroy-method="destroyMethod">
+              <property name="name" value="songdan"/>
+       </bean>
+</beans>
